@@ -9,8 +9,8 @@ const { downloadImageFromWhatsApp } = require('../services/imageService');
 const { handleMessage: queueHandler } = require('../services/queueService');
 const botConfig = require('../config/botConfig');
 
-const SUBSCRTIPTION_MESSAGE = "You're out of messages. Click here to upgrade and receive unlimited messages!";
-const ERROR_MESSAGE = "I apologixe, but I'm having trouble processing your message right now. Please try again in a moment.";
+const SUBSCRTIPTION_MESSAGE = "You're out of messages. Click here to upgrade and receive unlimited messages!🙏";
+const ERROR_MESSAGE = "I apologixe, but I'm having trouble processing your message right now. Please try again in a moment.🙏";
 
 async function handleMessage(req) {
   try {
