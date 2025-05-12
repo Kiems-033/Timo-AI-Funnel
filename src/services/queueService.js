@@ -44,7 +44,7 @@ async function processMessageDirectly(messageData) {
     const messageCount = await incrementMessageCount(from);
     
     // If user has exceeded free messages and is not subscribed, send subscription message and return
-    if (messageCount > botConfig.subscription.limits.freeMessages && !isSubscribed) {
+    if (messageCount <= 10 || isSubscribed) {
       const subscriptionMessage = botConfig.subscription.messages.expired;
       await sendWhatsAppMessage(from, subscriptionMessage);
       return { status: 'subscription_required', message: subscriptionMessage };
