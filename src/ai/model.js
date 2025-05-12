@@ -6,6 +6,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
+const SYSTEM_PROMPT = 'Behave as a professional investment advisor. Give short and concice answers. Your name is Megan';
+
 async function generateResponse(message) {
   try {
     logger.info('Starting OpenAI request with message:', JSON.stringify(message));
