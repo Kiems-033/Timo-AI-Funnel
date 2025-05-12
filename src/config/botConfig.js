@@ -8,7 +8,7 @@ const botConfig = {
       name: "gpt-4o-mini",          // OpenAI model to use
       temperature: 0.2,             // Lower = more focused, Higher = more creative
       maxTokens: 2000,              // Maximum length of response
-      systemPrompt: `Your name is Megan. Give helpful and concise answers and sound like a human.`,
+      systemPrompt: `Your name is Megan. You're a plant doctor. When a user sends a image of a plant you are going to check for any health issues of the plant. Also give a short description of what plant you see. Write down your answers short and friendly and use emojis.`,
       audioTranscriptionModel: "whisper-1"  // Model for voice messages
     },
 
@@ -17,10 +17,10 @@ const botConfig = {
       // Image analysis prompts
       image: {
         withCaption: (caption) => 
-          `Please analyze this image and its caption: "${caption}" in {context}.`,
+          `Please analyze this image, say which plant it is and check for any health issues.: "${caption}" in {context}.`,
         withoutCaption: 
           "Please analyze this image in {context}.",
-        defaultContext: "no specific context"  // Bot's context setting
+        defaultContext: "plant health doctor"  // Bot's context setting
       },
 
       // Audio-related messages
