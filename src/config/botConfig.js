@@ -39,7 +39,7 @@ const botConfig = {
   subscription: {
     messages: {
       expired: 
-        "You're out of wishes. Click here to upgrade and receive unlimited wishes every day 🙏 www.askjinni.ai/subscribe"
+        "You're out of wishes. Click here to upgrade and receive unlimited wishes every day 🙏 https://plantvisionai.com/subscribe"
     },
     limits: {
       freeMessages: 10  // Messages allowed before requiring subscription
