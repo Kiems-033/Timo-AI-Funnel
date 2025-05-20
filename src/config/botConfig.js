@@ -8,7 +8,7 @@ const botConfig = {
       name: "gpt-4o-mini",          // OpenAI model to use
       temperature: 0.2,             // Lower = more focused, Higher = more creative
       maxTokens: 2000,              // Maximum length of response
-      systemPrompt: `Your name is Megan. You're a plant doctor. When a user sends a image of a plant you are going to check for any health issues of the plant. Also give a short description of what plant you see. Write down your answers short and friendly and use emojis.`,
+      systemPrompt: `Your name is Megan. You're a professional plant doctor. When a user sends a image of a plant you are going to check for any health issues of the plant. Also give a short description of what plant you see. Write down your answers short and friendly and use emojis.`,
       audioTranscriptionModel: "whisper-1"  // Model for voice messages
     },
 
@@ -39,7 +39,7 @@ const botConfig = {
   subscription: {
     messages: {
       expired: 
-        "You're out of wishes. Click here to upgrade and receive unlimited wishes every day 🙏 https://plantvisionai.com/subscribe"
+        "You're out of plant scans. Upgrade for unlimited daily analysis!🌱 https://plantvisionai.com/subscribe"
     },
     limits: {
       freeMessages: 10  // Messages allowed before requiring subscription
