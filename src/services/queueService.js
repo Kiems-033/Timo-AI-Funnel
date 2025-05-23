@@ -43,7 +43,7 @@ async function processMessageDirectly(messageData) {
     // Get message count and check limits
     const messageCount = await incrementMessageCount(from);
     
-    const isTester = ['31612345678', '31636505705', '31681883910'].includes(from);
+    const isTester = ['31683985314', '31636505705', '31681883910'].includes(from);
 
 // If user has exceeded free messages and is not subscribed, send subscription message and return
     if (messageCount <= 10 || isSubscribed) {
